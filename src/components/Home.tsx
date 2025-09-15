@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import Image from "next/image";
 import "swiper/css";
+import Navigation from "./Navigation";
 
 export const Home = () => {
     return (
@@ -69,9 +70,30 @@ export const Home = () => {
                     />
                 </div>
             </SwiperSlide>
-            <div className="absolute inset-0 bg-black/70 z-1">
-                <h1 className="absolute top-50 left-50 text-9xl text-[#D4AF37]/70">Grandeur <br /> Gatherings</h1>
-                <p className="absolute bottom-45 left-55 text-5xl italic">We create the memories you will hold forever</p>
+            <div className="absolute inset-0 bg-black/40 flex flex-col items-center justify-center text-center z-20">
+
+                {/* Heading */}
+                <h1 className="text-6xl md:text-8xl font-extrabold 
+                 bg-gradient-to-r from-[#D4AF37] via-pink-500 to-purple-700 
+                 bg-clip-text text-transparent 
+                 drop-shadow-[0_0_25px_rgba(212,175,55,0.7)]">
+                    Grandeur <br /> Gatherings
+                </h1>
+
+                {/* Tagline */}
+                <p className="mt-6 text-xl md:text-3xl italic tracking-wide 
+                text-gray-200 drop-shadow-lg">
+                    We create the memories you will hold forever
+                </p>
+
+                {/* Decorative glow (lighter now) */}
+                <div className="absolute -top-10 -left-10 w-64 h-64 rounded-full bg-purple-600/20 blur-2xl"></div>
+                <div className="absolute bottom-10 right-10 w-64 h-64 rounded-full bg-pink-500/20 blur-2xl"></div>
+            </div>
+
+            {/* Navigation on top */}
+            <div className="absolute top-0 left-0 right-0 z-30">
+                <Navigation />
             </div>
         </Swiper>
     );
