@@ -1,19 +1,25 @@
 name: CI/CD Pipeline
-on: 
+
+on:
   push:
-    branches: ["main"]
+    branches: 
+      - main
+      - development
   pull_request:
-    branches: ["main"]
+    branches: 
+      - main
+      - development
+
 jobs:
   build:
-    runs-on: ubuntu-latest 
+    runs-on: ubuntu-latest
     steps:
-      - name: checkout code
+      - name: Checkout code
         uses: actions/checkout@v3
 
       - name: Setup Node.js
         uses: actions/setup-node@v3
-        with: 
+        with:
           node-version: 22.17.0
 
       - name: Install dependencies
@@ -22,8 +28,35 @@ jobs:
       - name: Run Linter
         run: npm run lint
 
-      - name: Run Build 
+      - name: Run Build
         run: npm run build
 
       # - name: Run Tests
-      #   run: npm test 
+      #   run: npm test
+
+  deploy:
+    if: github.ref == 'refs/heads/main' # only deploy when pushing to main
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 22.17.0
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build project
+        run: npm run build
+
+      - name: Deploy to Vercel
+        uses: amondnet/vercel-action@v25
+        with:
+          vercel-token: ${{ secrets.VERCEL_TOKEN }} # add this in GitHub Secrets
+          vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
+          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
+          working-directory: ./
