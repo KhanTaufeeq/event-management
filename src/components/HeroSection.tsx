@@ -6,7 +6,6 @@ import Image from "next/image";
 export default function HeroSection() {
   return (
     <section className="relative h-screen w-full flex items-center justify-center overflow-hidden">
-      {/* 1. BACKGROUND LAYER */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-black/40 z-10" />
         <Image
