@@ -1,0 +1,60 @@
+import type { Metadata } from "next";
+import { Playfair_Display, Montserrat, Great_Vibes } from "next/font/google";
+import Navbar from "taufeeq/components/Navbar";
+import Footer from "taufeeq/components/Footer";
+import "./globals.css";
+
+const lora = Playfair_Display({
+  variable: "--font-lora",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+});
+
+const plus_jakarta_sans = Montserrat({
+  variable: "--font-plus-jakarta-sans",
+  subsets: ["latin"],
+  weight: ["200", "300", "400", "500", "600", "700", "800"],
+});
+
+const nothing_you_could_do = Great_Vibes({
+  variable: "--font-nothing-you-could-do",
+  subsets: ["latin"],
+  weight: ["400"],
+});
+
+// const lora = Lora({
+//   variable : "--font-lora",
+//   subsets: ["cyrillic"],
+//   weight: ['200', '300', '400', '500', '600', '700', '800', '900'],
+// })
+
+export const metadata: Metadata = {
+  title: "Utsava Gatherings",
+  description:
+    "We are an experienced event management company that organizes weddings, parties, corporate events, and special occasions. From planning to execution, we handle everything with creativity and precision — turning your vision into reality.",
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html lang="en">
+      <head>
+        <link
+          rel="shortcut icon"
+          href="images/utsava.svg"
+          type="image/x-icon"
+        />
+      </head>
+      <body
+        className={`${lora.variable} ${plus_jakarta_sans.variable} ${nothing_you_could_do.variable} antialiased`}
+      >
+        <Navbar />
+        <main className="min-h-screen relative flex flex-col">{children}</main>
+        <Footer />
+      </body>
+    </html>
+  );
+}

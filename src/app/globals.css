@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-cream: #f6e9cf;
+  --color-brand-dark: #472830;
+  --color-brand-gold: #b08d55;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 25s linear infinite;
+}
+
+/* Pause animation when user hovers (Nice UX touch) */
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* --- 3. GLOBAL RESETS --- */
+body {
+  /* Set the default background and text color to your brand identity */
+  background-color: var(--color-brand-cream);
+  color: var(--color-brand-dark);
+
+  /* Set the default font */
+  font-family: var(--font-serif), sans-serif;
+}
