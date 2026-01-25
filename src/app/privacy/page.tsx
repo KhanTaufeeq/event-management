@@ -1,7 +1,5 @@
 import React from "react";
 
-export const runtime = "edge";
-
 export default function PrivacyPolicy() {
   return (
     <main className="bg-brand-dark min-h-screen pt-32 pb-20 px-6">

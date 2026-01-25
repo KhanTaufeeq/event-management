@@ -3,8 +3,6 @@ import Image from "next/image";
 import TeamSection from "taufeeq/components/TeamSection";
 import CTASection from "taufeeq/components/CTASection";
 
-export const runtime = "edge";
-
 export default function AboutPage() {
   return (
     <div className="bg-brand-dark min-h-screen">

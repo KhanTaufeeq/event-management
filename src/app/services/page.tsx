@@ -4,8 +4,6 @@ import Image from "next/image";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
 import CTASection from "taufeeq/components/CTASection";
 
-export const runtime = "edge";
-
 const SERVICES_DETAILED = [
   {
     id: "weddings",
@@ -99,7 +97,7 @@ const PROCESS_STEPS = [
 export default function ServicesPage() {
   return (
     <div className="bg-white min-h-screen">
-      <div className="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
+      <div className="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] pointer-events-none"></div>
       {/* 1. HERO */}
       <section className="pt-40 pb-20 px-6 bg-brand-dark text-center">
         <span className="text-brand-gold font-bold font-(family-name:--font-lora) tracking-widest uppercase text-xs mb-4 block">

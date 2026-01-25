@@ -189,6 +189,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ className = "" }) => {
       )}
 
       <form onSubmit={handleSubmit} className="space-y-8">
+        <div className="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] pointer-events-none"></div>
         {/* Row 1 */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="group">

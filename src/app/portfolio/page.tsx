@@ -5,8 +5,6 @@ import React, { useState, useEffect } from "react";
 import { ArrowUpRight, X, MapPin, Calendar } from "lucide-react";
 import CTASection from "taufeeq/components/CTASection";
 
-export const runtime = "edge";
-
 // --- EXPANDED DATA WITH DETAILS ---
 const PORTFOLIO_ITEMS = [
   // --- WEDDINGS ---
@@ -187,7 +185,7 @@ export default function PortfolioPage() {
     <div className="bg-white min-h-screen">
       {/* 1. HERO SECTION */}
       <section className="pt-40 pb-12 px-6 bg-brand-dark text-center">
-        <div className="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
+        <div className="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] pointer-events-none"></div>
         <span className="text-brand-gold font-bold font-(family-name:--font-lora) tracking-widest uppercase text-xs mb-4 block animate-fade-in">
           Our Masterpieces
         </span>
