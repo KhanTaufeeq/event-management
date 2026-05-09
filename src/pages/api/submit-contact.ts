@@ -7,6 +7,7 @@ interface ContactFormData {
     email: string;
     eventType: string;
     phone: string;
+    location: string;
     message: string;
 }
 
@@ -138,7 +139,7 @@ export default async function handler(req: ContactApiRequest, res: NextApiRespon
             })
         }
 
-        const { name, email, phone, eventType, message } = req.body;
+        const { name, email, phone, location, eventType, message } = req.body;
 
         console.log(eventType);
 
@@ -165,12 +166,13 @@ export default async function handler(req: ContactApiRequest, res: NextApiRespon
         const sheet = doc.sheetsByIndex[0];
 
         // Prepare row data
-        const rowData: RawRowData = {
-            'Full Name': name.trim(),
-            Email: email.trim().toLowerCase(),
-            Phone: phone.trim(),
-            'Event Type': eventType.trim() || 'Not specified',
-            Message: message.trim() || 'No message provided',
+       const rowData: RawRowData = {
+            'Full Name': name?.trim(),
+            Email: email?.trim().toLowerCase(),
+            Phone: phone?.trim(),
+            Location: location?.trim() || 'Not specified',
+            'Event Type': eventType?.trim() || 'Not specified',
+            Message: message?.trim() || 'No message provided',
             Timestamp: new Date().toLocaleString('en-IN', {
                 timeZone: 'Asia/Kolkata',
                 year: 'numeric',

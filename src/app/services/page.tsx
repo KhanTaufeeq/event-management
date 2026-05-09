@@ -6,65 +6,60 @@ import CTASection from "taufeeq/components/CTASection";
 
 const SERVICES_DETAILED = [
   {
-    id: "weddings",
-    title: "Luxury Weddings",
-    subtitle: "Orchestrating Your Fairytale",
-    description:
-      "Your wedding is not just an event; it's a legacy. We specialize in creating bespoke wedding experiences that blend traditional utsava with modern elegance. From finding the perfect palace in Udaipur to coordinating a 500-guest sangeet, we handle it all.",
+    id: "mumbai-execution",
+    title: "Mumbai Signature Execution",
+    subtitle: "Full-Service Event Management by Raaes Khan",
+    description: "For our Mumbai clients, we offer end-to-end physical event execution. From premium corporate galas to grand weddings, our on-ground team handles vendor management, custom decor, catering, and flawless day-of coordination.",
     features: [
-      "Venue Scouting & Booking",
-      "Theme & Concept Design",
-      "Guest Hospitality & Logistics",
-      "Celebrity Entertainment",
-      "Gourmet Catering Management",
-    ],
-    image: "/images/luxury-wedding.jpeg",
-  },
-  {
-    id: "corporate",
-    title: "Corporate Galas & Summits",
-    subtitle: "Where Business Meets Brilliance",
-    description:
-      "We understand the stakes of corporate events. Whether it's a product launch, an annual tech summit, or an awards night, we deliver precision, branding alignment, and flawless execution that impresses your stakeholders.",
-    features: [
+      "End-to-End Ground Execution",
+      "Local Vendor Management",
       "Stage & AV Production",
-      "Brand Activation",
-      "Delegate Management",
-      "Gala Dinner Setup",
-      "Corporate Gifting Solutions",
+      "On-site Coordination",
+      "Decor & Catering Management",
     ],
-    image:
-      "https://images.unsplash.com/photo-1511578314322-379afb476865?q=80&w=1200&auto=format&fit=crop",
+    image: "/images/luxury-wedding.jpeg", // Keep your existing images or update them
   },
   {
-    id: "social",
-    title: "Social & Private Parties",
-    subtitle: "Celebrating Life's Milestones",
-    description:
-      "From a 50th Golden Anniversary to an intimate engagement soirée, we turn personal moments into unforgettable memories. We focus on intimacy, warmth, and personalized details that reflect your family's story.",
+    id: "destination-advisory",
+    title: "Destination Wedding Advisory",
+    subtitle: "Curating Your Global Celebration",
+    description: "Planning a wedding outside Mumbai or from the UK? We act as your luxury consultants. We leverage our exclusive tie-ups with premium resorts in Udaipur, Goa, and beyond to negotiate trade rates and curate your perfect destination wedding.",
     features: [
-      "Private Villa/Venue Booking",
-      "Bespoke Decor",
-      "Live Music & DJ",
-      "Cocktail Bar Setup",
-      "Personalized Invitations",
+      "Venue Scouting & Tie-ups",
+      "B2B Rate Negotiation",
+      "Trusted Vendor Recommendations",
+      "Remote Planning & Design",
+      "Dedicated UK-to-India Bridge",
     ],
     image: "/images/private-party.jpeg",
   },
   {
-    id: "festive",
-    title: "Festive Celebrations",
-    subtitle: "Tradition with a Modern Twist",
-    description:
-      "Diwali card parties, Eid gatherings, or Christmas balls. We bring the perfect blend of cultural authenticity and modern flair to your festivities. Let us handle the chaos while you enjoy the celebration.",
+    id: "pre-wedding-honeymoon",
+    title: "Pre-Wedding & Honeymoon Curation",
+    subtitle: "Designing Romantic Milestones",
+    description: "From securing permissions for an exotic pre-wedding shoot to booking a luxury honeymoon at exclusive partner rates. We handle the itinerary, luxury stays, and unique romantic experiences so you can just enjoy the moment.",
     features: [
-      "Traditional Decor themes",
-      "Cultural Entertainment",
-      "Festive Catering Menus",
-      "Return Gift Curation",
-      "Lighting & Sound",
+      "Exotic Location Scouting",
+      "Shoot Logistics & Permissions",
+      "Luxury Resort Booking",
+      "Curated Travel Itineraries",
+      "VIP Upgrades & Perks",
     ],
-    image: "/images/festive.jpeg",
+    image: "/images/real_deco1.jpeg",
+  },
+  {
+    id: "corporate-retreats",
+    title: "Corporate Retreats & Summits",
+    subtitle: "Offsites That Inspire",
+    description: "We help companies find the perfect properties for their annual summits and leadership offsites. We curate the venue, negotiate bulk room rates, and structure the itinerary while the resort's in-house team executes the logistics.",
+    features: [
+      "Conference Venue Sourcing",
+      "Bulk Room Negotiation",
+      "Team-Building Itineraries",
+      "AV & Tech Planning Oversight",
+      "Gala Dinner Curation",
+    ],
+    image: "https://images.unsplash.com/photo-1511578314322-379afb476865?q=80&w=1200&auto=format&fit=crop"
   },
 ];
 

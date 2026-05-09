@@ -9,6 +9,7 @@ interface ContactFormData {
   name: string;
   email: string;
   phone: string;
+  location: string;
   eventType: string;
   message: string;
 }
@@ -41,6 +42,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ className = "" }) => {
     name: "",
     email: "",
     phone: "",
+    location: "",
     eventType: "",
     message: "",
   });
@@ -129,6 +131,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ className = "" }) => {
           name: "",
           email: "",
           phone: "",
+          location: "",
           eventType: "",
           message: "",
         });
@@ -146,11 +149,17 @@ const ContactForm: React.FC<ContactFormProps> = ({ className = "" }) => {
     }
   };
 
-  const EVENT_TYPES = [
-    { value: "wedding", label: "Luxury Wedding" },
-    { value: "corporate", label: "Corporate Gala" },
-    { value: "festival", label: "Festive Celebration" },
-    { value: "birthday", label: "Private Party" },
+  const LOCATION_TYPES = [
+    { value: "Mumbai (Full Execution)", label: "Mumbai (Full Execution)" },
+    { value: "India - Destination (Advisory)", label: "India - Destination (Advisory)" },
+    { value: "International (Advisory)", label: "International (Advisory)" },
+  ];
+
+  const SERVICE_TYPES = [
+    { value: "Wedding", label: "Wedding" },
+    { value: "Pre-Wedding Shoot", label: "Pre-Wedding Shoot" },
+    { value: "Honeymoon", label: "Honeymoon" },
+    { value: "Corporate Event", label: "Corporate Event" },
     { value: "other", label: "Other" },
   ];
 
@@ -238,18 +247,37 @@ const ContactForm: React.FC<ContactFormProps> = ({ className = "" }) => {
           />
           <div className="group">
             <label
+              htmlFor="location"
+              className="font-(family-name:--font-plus-jakarta-sans) block text-xs uppercase tracking-widest text-brand-gold mb-1 group-focus-within:text-brand-cream transition-colors"
+            >
+              Where is your Event?
+            </label>
+            <CustomSelect
+              value={formData.location}
+              onChange={(val) =>
+                setFormData((prev) => ({ ...prev, location: val }))
+              }
+              options={LOCATION_TYPES}
+              placeholder="Select a location"
+            />
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="group">
+            <label
               htmlFor="eventType"
               className="font-(family-name:--font-plus-jakarta-sans) block text-xs uppercase tracking-widest text-brand-gold mb-1 group-focus-within:text-brand-cream transition-colors"
             >
-              Event Type
+              What do you need help with?
             </label>
             <CustomSelect
               value={formData.eventType}
               onChange={(val) =>
                 setFormData((prev) => ({ ...prev, eventType: val }))
               }
-              options={EVENT_TYPES}
-              placeholder="Select an occasion"
+              options={SERVICE_TYPES}
+              placeholder="Select a service"
             />
           </div>
         </div>
@@ -298,6 +326,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ className = "" }) => {
               target="_blank"
               rel="noopener noreferrer"
               className="hover:opacity-80 transition-opacity"
+              title="submit"
             >
               <Image
                 src="/images/WhatsAppButtonGreenMedium.png"
@@ -305,7 +334,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ className = "" }) => {
                 width={180}
                 height={45}
                 className="h-[45px] w-auto object-contain"
-                unoptimized // CRITICAL for Cloudflare
+                unoptimized
               />
             </a>
           </div>
