@@ -9,7 +9,8 @@ const SERVICES_DETAILED = [
     id: "mumbai-execution",
     title: "Mumbai Signature Execution",
     subtitle: "Full-Service Event Management by Raaes Khan",
-    description: "For our Mumbai clients, we offer end-to-end physical event execution. From premium corporate galas to grand weddings, our on-ground team handles vendor management, custom decor, catering, and flawless day-of coordination.",
+    description:
+      "For our Mumbai clients, we offer end-to-end physical event execution. From premium corporate galas to grand weddings, our on-ground team handles vendor management, custom decor, catering, and flawless day-of coordination.",
     features: [
       "End-to-End Ground Execution",
       "Local Vendor Management",
@@ -23,7 +24,8 @@ const SERVICES_DETAILED = [
     id: "destination-advisory",
     title: "Destination Wedding Advisory",
     subtitle: "Curating Your Global Celebration",
-    description: "Planning a wedding outside Mumbai or from the UK? We act as your luxury consultants. We leverage our exclusive tie-ups with premium resorts in Udaipur, Goa, and beyond to negotiate trade rates and curate your perfect destination wedding.",
+    description:
+      "Planning a wedding outside Mumbai or from the UK? We act as your luxury consultants. We leverage our exclusive tie-ups with premium resorts in Udaipur, Goa, and beyond to negotiate trade rates and curate your perfect destination wedding.",
     features: [
       "Venue Scouting & Tie-ups",
       "B2B Rate Negotiation",
@@ -37,7 +39,8 @@ const SERVICES_DETAILED = [
     id: "pre-wedding-honeymoon",
     title: "Pre-Wedding & Honeymoon Curation",
     subtitle: "Designing Romantic Milestones",
-    description: "From securing permissions for an exotic pre-wedding shoot to booking a luxury honeymoon at exclusive partner rates. We handle the itinerary, luxury stays, and unique romantic experiences so you can just enjoy the moment.",
+    description:
+      "From securing permissions for an exotic pre-wedding shoot to booking a luxury honeymoon at exclusive partner rates. We handle the itinerary, luxury stays, and unique romantic experiences so you can just enjoy the moment.",
     features: [
       "Exotic Location Scouting",
       "Shoot Logistics & Permissions",
@@ -51,7 +54,8 @@ const SERVICES_DETAILED = [
     id: "corporate-retreats",
     title: "Corporate Retreats & Summits",
     subtitle: "Offsites That Inspire",
-    description: "We help companies find the perfect properties for their annual summits and leadership offsites. We curate the venue, negotiate bulk room rates, and structure the itinerary while the resort's in-house team executes the logistics.",
+    description:
+      "We help companies find the perfect properties for their annual summits and leadership offsites. We curate the venue, negotiate bulk room rates, and structure the itinerary while the resort's in-house team executes the logistics.",
     features: [
       "Conference Venue Sourcing",
       "Bulk Room Negotiation",
@@ -59,7 +63,8 @@ const SERVICES_DETAILED = [
       "AV & Tech Planning Oversight",
       "Gala Dinner Curation",
     ],
-    image: "https://images.unsplash.com/photo-1511578314322-379afb476865?q=80&w=1200&auto=format&fit=crop"
+    image:
+      "https://images.unsplash.com/photo-1511578314322-379afb476865?q=80&w=1200&auto=format&fit=crop",
   },
 ];
 
@@ -72,20 +77,17 @@ const PROCESS_STEPS = [
   {
     number: "02",
     title: "Concept",
-    desc:
-      "Our team drafts a mood board, layout, and detailed plan for your approval.",
+    desc: "Our team drafts a mood board, layout, and detailed plan for your approval.",
   },
   {
     number: "03",
     title: "Execution",
-    desc:
-      "We manage vendors, logistics, and timelines. You just show up and enjoy.",
+    desc: "We manage vendors, logistics, and timelines. You just show up and enjoy.",
   },
   {
     number: "04",
     title: "Wrap Up",
-    desc:
-      "Post-event closure, settlements, and ensuring you leave with happy memories.",
+    desc: "Post-event closure, settlements, and ensuring you leave with happy memories.",
   },
 ];
 

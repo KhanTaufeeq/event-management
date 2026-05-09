@@ -76,7 +76,7 @@ export default function TeamSection() {
                 <Image
                   src={member.image}
                   alt={member.name}
-                  fill 
+                  fill
                   className="object-cover transition-transform duration-700 group-hover:scale-105"
                   sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
                   unoptimized // CRITICAL for Cloudflare

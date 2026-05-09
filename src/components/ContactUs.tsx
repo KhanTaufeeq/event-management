@@ -151,7 +151,10 @@ const ContactForm: React.FC<ContactFormProps> = ({ className = "" }) => {
 
   const LOCATION_TYPES = [
     { value: "Mumbai (Full Execution)", label: "Mumbai (Full Execution)" },
-    { value: "India - Destination (Advisory)", label: "India - Destination (Advisory)" },
+    {
+      value: "India - Destination (Advisory)",
+      label: "India - Destination (Advisory)",
+    },
     { value: "International (Advisory)", label: "International (Advisory)" },
   ];
 

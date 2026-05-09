@@ -8,8 +8,7 @@ const REVIEWS = [
     name: "Aditya & Riya",
     event: "Royal Wedding in Udaipur",
     // Escaped quotes & apostrophes
-    text:
-      "Utsava Gatherings didn't just plan our wedding; they orchestrated a dream. Every detail, from the floral decor to the guest logistics, was flawless. Our guests are still talking about the entry setup!",
+    text: "Utsava Gatherings didn't just plan our wedding; they orchestrated a dream. Every detail, from the floral decor to the guest logistics, was flawless. Our guests are still talking about the entry setup!",
     rating: 5,
     image: "/images/testimonial1.png", // Added leading slash
   },
@@ -18,8 +17,7 @@ const REVIEWS = [
     name: "Vikram Singhania",
     role: "CEO, TechFlow Systems",
     event: "Annual Corporate Summit",
-    text:
-      "Professionalism at its peak. They handled our 500+ attendee gala with absolute precision. The branding integration was subtle yet impactful. Highly recommended for high-stakes corporate events.",
+    text: "Professionalism at its peak. They handled our 500+ attendee gala with absolute precision. The branding integration was subtle yet impactful. Highly recommended for high-stakes corporate events.",
     rating: 5,
     image: "/images/testimonial2.png",
   },
@@ -27,8 +25,7 @@ const REVIEWS = [
     id: 3,
     name: "Mrs. Kapoor",
     event: "50th Golden Anniversary",
-    text:
-      "We wanted something intimate yet luxurious for my parents' 50th. The team understood the emotion behind the event perfectly. It was magical, warm, and utterly grand.",
+    text: "We wanted something intimate yet luxurious for my parents' 50th. The team understood the emotion behind the event perfectly. It was magical, warm, and utterly grand.",
     rating: 5,
     image: "/images/testimonial5.png",
   },
@@ -36,8 +33,7 @@ const REVIEWS = [
     id: 4,
     name: "Sarah & David",
     event: "Destination Wedding, Goa",
-    text:
-      "Planning a wedding from Maldives was stressful until we hired Utsava. They handled the time zone differences and local vendors effortlessly. The beach setup was straight out of a movie.",
+    text: "Planning a wedding from Maldives was stressful until we hired Utsava. They handled the time zone differences and local vendors effortlessly. The beach setup was straight out of a movie.",
     rating: 5,
     image: "/images/testimonial4.png",
   },
@@ -45,8 +41,7 @@ const REVIEWS = [
     id: 5,
     name: "Rajesh Gupta",
     event: "Diwali Card Party",
-    text:
-      "The best party hosts in Mumbai! The decor was vibrant yet classy, and the catering management was superb. They turned our home into a festive palace for the night.",
+    text: "The best party hosts in Mumbai! The decor was vibrant yet classy, and the catering management was superb. They turned our home into a festive palace for the night.",
     rating: 5,
     image: "/images/testimonial3.png",
   },
@@ -54,8 +49,7 @@ const REVIEWS = [
     id: 6,
     name: "Priya & Ankit",
     event: "Sangeet & Cocktail",
-    text:
-      "We were worried about the lighting and sound for the Sangeet, but their technical team is a beast. The stage looked like a concert arena! Thank you for making us look like stars.",
+    text: "We were worried about the lighting and sound for the Sangeet, but their technical team is a beast. The stage looked like a concert arena! Thank you for making us look like stars.",
     rating: 5,
     image: "/images/testimonial6.png",
   },
