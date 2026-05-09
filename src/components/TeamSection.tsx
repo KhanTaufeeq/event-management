@@ -23,7 +23,7 @@ const TEAM = [
   {
     name: "Fayaz Khan",
     role: "Head of Global Advisory",
-    image: "/images/fayaz (2).png",
+    image: "/images/fayaz.png",
     bio: "Confident and well-versed in global culture, Fayaz is the trusted advisor for our NRI and high-net-worth clients seeking destination events.",
   },
   {
@@ -35,7 +35,7 @@ const TEAM = [
   {
     name: "Sadaf Naz",
     role: "Head of Event Logistics",
-    image: "/images/sadaf (2).png",
+    image: "/images/sadaf.png",
     bio: "The operational backbone. Focused and determined, Sadaf is the ultimate team player who ensures every timeline and vendor is perfectly managed.",
   },
   {
