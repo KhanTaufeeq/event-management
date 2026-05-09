@@ -54,8 +54,8 @@ export default function ServicesSection() {
             Curating Experiences for Every Occasion
           </h2>
           <p className="text-brand-dark/80 font-(family-name:--font-plus-jakarta-sans) text-lg">
-            We don&apos;t believe in one-size-fits-all. Our approach is tailored to
-            the unique essence of the event and the host.
+            We don&apos;t believe in one-size-fits-all. Our approach is tailored
+            to the unique essence of the event and the host.
           </p>
         </div>
 

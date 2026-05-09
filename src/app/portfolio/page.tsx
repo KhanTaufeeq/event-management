@@ -163,7 +163,7 @@ const FILTERS = [
 export default function PortfolioPage() {
   const [activeFilter, setActiveFilter] = useState("all");
   const [selectedItem, setSelectedItem] = useState<
-    typeof PORTFOLIO_ITEMS[0] | null
+    (typeof PORTFOLIO_ITEMS)[0] | null
   >(null);
 
   // Lock body scroll when modal is open

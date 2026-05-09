@@ -22,6 +22,9 @@ export default function HeroSection() {
       {/* 2. CONTENT LAYER */}
       <div className="relative z-20 text-center px-6 max-w-5xl mx-auto mt-16">
         {/* Main Headline */}
+        <span className="text-brand-cream font-bold font-(family-name:--font-lora) tracking-widest uppercase text-xs mb-4 block">
+          Global Advisory & Local Execution
+        </span>
         <h1 className="text-6xl md:text-7xl font-(family-name:--font-lora) text-brand-cream mb-6 leading-tight drop-shadow-xl">
           Architects of Eternal Joy
         </h1>
