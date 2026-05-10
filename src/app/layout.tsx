@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     siteName: "Utsava Gatherings",
     images: [
       {
-        url: "images/utsava.svg",
+        url: "https://www.utsavagatherings.com/images/utsava.png",
         width: 1200,
         height: 630,
         alt: "Utsava Gatherings Logo",
