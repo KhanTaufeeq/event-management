@@ -52,7 +52,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ className = "" }) => {
 
   const businessPhone = getEnvVar(
     "NEXT_PUBLIC_BUSINESS_PHONE",
-    "+918269552259"
+    "+447818991725"
   );
 
   const handleChange = (

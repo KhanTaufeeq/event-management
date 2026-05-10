@@ -5,6 +5,7 @@ export const runtime = "edge";
 export default function TermsOfService() {
   return (
     <main className="bg-brand-dark min-h-screen pt-32 pb-20 px-6">
+      <div className="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] pointer-events-none"></div>
       <div className="max-w-4xl mx-auto">
         <h1 className="text-4xl md:text-5xl font-(family-name:--font-lora) text-brand-cream mb-8">
           Terms of Service

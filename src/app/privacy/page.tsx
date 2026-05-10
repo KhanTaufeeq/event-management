@@ -3,6 +3,7 @@ import React from "react";
 export default function PrivacyPolicy() {
   return (
     <main className="bg-brand-dark min-h-screen pt-32 pb-20 px-6">
+      <div className="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] pointer-events-none"></div>
       <div className="max-w-4xl mx-auto">
         <h1 className="text-4xl md:text-5xl ont-(family-name:--font-lora) text-brand-cream mb-8">
           Privacy Policy
@@ -39,7 +40,7 @@ export default function PrivacyPolicy() {
               <li>Names</li>
               <li>Phone Numbers</li>
               <li>Email Addresses</li>
-              <li>Event Details (Dates, Types, Preferences)</li>
+              <li>Event Details (Dates, Types, Location, Preferences)</li>
             </ul>
           </section>
 
