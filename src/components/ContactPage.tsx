@@ -6,19 +6,36 @@ import ContactForm from "taufeeq/components/ContactUs";
 // --- FAQ DATA ---
 const faqs = [
   {
+    question:
+      "What is the difference between your Mumbai Execution and Global Advisory services?",
+    answer:
+      "For events within Mumbai, our in-house team handles the physical, end-to-end execution—from custom decor to on-ground logistics. For destination events outside Mumbai or internationally, we act as your luxury consultants. We curate the venues, negotiate exclusive trade rates, and design the event, while the partner resort's in-house team handles the physical execution under our careful oversight.",
+  },
+  {
+    question:
+      "I live in the UK but want a destination wedding in India. Can you help?",
+    answer:
+      "Absolutely. A significant portion of our advisory clients are NRIs. We act as your dedicated bridge to India, handling all venue scouting, vendor vetting, and logistics remotely so you can plan a royal Indian celebration without the stress of navigating different time zones.",
+  },
+  {
+    question: "How does the pricing work for Destination Advisory?",
+    answer:
+      "For our advisory services, we charge a flat curation fee for our time, design expertise, and network access. Because of our strong B2B tie-ups with premium resorts, we often secure exclusive room rates and package deals for your guests that you wouldn't find booking directly online.",
+  },
+  {
+    question: "Do you also curate corporate retreats and tech summits?",
+    answer:
+      "Yes. We help corporations find the perfect premium properties for annual leadership offsites, team-building weekends, and tech galas. We handle bulk room negotiations and itinerary curation so your team can focus entirely on the business agenda.",
+  },
+  {
+    question: "Do you plan pre-wedding shoots or honeymoons?",
+    answer:
+      "Yes, our curation covers your entire romantic journey. From securing shooting permissions at exotic locations for your pre-wedding shoot to booking VIP honeymoons with our luxury travel partners, we handle all the intricate details.",
+  },
+  {
     question: "How far in advance should I book?",
     answer:
-      "We recommend booking at least 6-12 months in advance for weddings and large events to ensure venue availability.",
-  },
-  {
-    question: "Do you handle destination weddings?",
-    answer:
-      "Yes! We specialize in destination weddings across India and internationally (Dubai, Bangkok, and Maldives).",
-  },
-  {
-    question: "What is your pricing model?",
-    answer:
-      "We offer bespoke packages tailored to your specific needs. Contact us for a consultation so we can understand your vision and budget.",
+      "For full-scale weddings and large corporate retreats, we recommend reaching out 6-12 months in advance. Premium destination resorts and heritage properties—especially in highly sought-after locations like Udaipur or Goa—book up incredibly fast during peak seasons.",
   },
 ];
 

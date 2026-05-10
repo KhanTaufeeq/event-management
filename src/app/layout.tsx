@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Playfair_Display, Montserrat, Great_Vibes } from "next/font/google";
 import Navbar from "taufeeq/components/Navbar";
 import Footer from "taufeeq/components/Footer";
+import ScrollNavigation from "taufeeq/components/ScrollNavigation";
 import "./globals.css";
 
 const lora = Playfair_Display({
@@ -29,9 +30,25 @@ const nothing_you_could_do = Great_Vibes({
 // })
 
 export const metadata: Metadata = {
-  title: "Utsava Gatherings",
+  title: "Utsava Gatherings | Luxury Event Execution & Global Advisory",
   description:
-    "We are an experienced event management company that organizes weddings, parties, corporate events, and special occasions. From planning to execution, we handle everything with creativity and precision — turning your vision into reality.",
+    "Curating extraordinary experiences. We offer signature end-to-end event execution in Mumbai and premium destination wedding advisory for clients worldwide.",
+  openGraph: {
+    title: "Utsava Gatherings | Luxury Events & Advisory",
+    description: "Curating extraordinary experiences globally.",
+    url: "https://www.utsavagatherings.com",
+    siteName: "Utsava Gatherings",
+    images: [
+      {
+        url: "images/utsava.svg",
+        width: 1200,
+        height: 630,
+        alt: "Utsava Gatherings Logo",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
@@ -54,6 +71,7 @@ export default function RootLayout({
         <Navbar />
         <main className="min-h-screen relative flex flex-col">{children}</main>
         <Footer />
+        <ScrollNavigation />
       </body>
     </html>
   );
